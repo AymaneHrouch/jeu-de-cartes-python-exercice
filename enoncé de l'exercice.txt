@@ -1,0 +1,27 @@
+Modélisation du jeu de cartes Bataille.
+Q 1. Module cartes.py.
+Les couleur sont énumérées dans un tuple de chaînes. Pour les valeurs on se donne un
+dictionnaire qui associe un nom à chaque valeur numérique :
+COULEUR = (’Pique’, ’Coeur’, ’Carreau’, ’Trèfle’)
+VALEUR = { 2: ’Deux’, 3: ’Trois’, 4: ’Quatre’, 5: ’Cinq’, 6: ’Six’,
+
+7: ’Sept’, 8: ’Huit’, 9: ’Neuf’, 10: ’Dix’,
+11: ’Valet’, 12: ’Dame’, 13: ’Roi’, 14: ’As’ }
+
+Chaque carte sera modélisée par un tuple (couleur, valeur) où couleur est un des élément de COULEUR
+et valeur une des clés de VALEUR. Un jeu de cartes sera modélisé par une liste de cartes.
+>>> Écrivez une fonction str_carte(carte) qui renvoie une chaîne contenant la
+représentation en toutes lettres de la carte passé en argument.
+\ldblquote c = (’Pique’, 8)
+\ldblquote str_c
+arte(c) ’Huit de
+Pique’
+>>> Écrivez une fonction jeu_de_carte() qui crée un jeu de cartes traditionnel et renvoie
+l’objet créé.
+Q2. Programme principal bataille.py.
+Le programme utilise le module cartes pour simuler une partie du jeu bataille entre deux joueurs.
+. Créez deux jeux de cartes jeu1 et jeu2 et mélangez-les aléatoirement.
+. Ensuite, tirez la première carte de chaque jeu et comparez les deux valeurs. Le joueur
+avec la carte la plus haute gagne un point. Continuez jusqu’à la fin des jeux. Pour chaque
+manche, affichez en toutes lettres les cartes tirées et le gagnant.
+. Affichez les points de chaque joueur et le gagnant de la partie.
